@@ -7,7 +7,7 @@ namespace payload
         static void Main(string[] args)
         {
            
-          find.findItem("php.ini");
+          find.findItem("apache2");
 
         }
     }

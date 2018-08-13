@@ -128,7 +128,7 @@ namespace payload
                 for (int j = 0; j < directories[i].contentNames.Count; j++)
                 {
                     wm("installing find item", "g", i, directories.Count);
-                    itemsAndDirectoryNames.Add(directories[i].contentNames[j] + "#" + directories[i].name);
+                    itemsAndDirectoryNames.Add(directories[i].contentNames[j] + "#dir#" + directories[i].name);
 
                 }
             }
@@ -139,15 +139,15 @@ namespace payload
 
             //Tuple<List<string>,List<string[]>> item = new Tuple<List<string>, List<string[]>>(new List<string>(), new List<string[]>());
 
-            string[] items = new string[itemsAndDirectoryNames.Count - 1];
-            string[] direcoryNames = new string[itemsAndDirectoryNames.Count - 1];
+            string[] items = new string[itemsAndDirectoryNames.Count];
+            string[] direcoryNames = new string[itemsAndDirectoryNames.Count];
             for (int i = 0; i < itemsAndDirectoryNames.Count; i++)
             {
 
                 // get the item name
                 for (int j = 0; j < itemsAndDirectoryNames[i].Length; j++)
                 {
-                    if (itemsAndDirectoryNames[i][j] == '#')
+                    if (itemsAndDirectoryNames[i].Substring(j, 5) == "#dir#")
                     {
                         break;
                     }
@@ -159,22 +159,19 @@ namespace payload
 
 
                 // get directory
-                direcoryNames[i] = itemsAndDirectoryNames[i].Substring(items[i].Length, itemsAndDirectoryNames[i].Length - items[i].Length);
+                direcoryNames[i] = itemsAndDirectoryNames[i].Substring(items[i].Length + 5, itemsAndDirectoryNames[i].Length - (items[i].Length + 5));
             }
 
 
-            File.WriteAllLines("data/find/allItems.txt", itemsAndDirectoryNames);
+            File.WriteAllLines("data/find/allItems.txt", items);
+            File.WriteAllLines("data/find/directoryNames.txt", direcoryNames);
         }
         public static void findItem(string item)
         {
 
-            wm("getting all items", "m");
+
             List<string> allItems = new List<string>(File.ReadAllLines("data/find/allItems.txt"));
 
-            wm("sorting all items", "g");
-            allItems.Sort();
-
-            wm("searching for items", "g");
             int indexFound = allItems.BinarySearch(item);
             // show this directory
             // get the dirctory
@@ -182,14 +179,27 @@ namespace payload
             // get directory
             if (indexFound >= 0)
             {
-                wm(allItems[indexFound], "g");
+                wm(File.ReadAllLines("data/find/directoryNames.txt")[indexFound], "g");
+
+                int stepBack = indexFound - 1;
+                while (allItems[stepBack] == item)
+                {
+                    wm(File.ReadAllLines("data/find/directoryNames.txt")[stepBack], "g");
+                    stepBack = stepBack - 1;
+                }
+
+                int stepForward = indexFound + 1;
+                while (allItems[stepForward] == item)
+                {
+                    wm(File.ReadAllLines("data/find/directoryNames.txt")[stepForward], "g");
+                    stepForward = stepForward - 1;
+                }
             }
             else
             {
                 wm("nothing found", "y");
             }
 
-            string done;
 
 
             // user will choose what to do next
