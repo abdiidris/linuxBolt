@@ -7,7 +7,7 @@ namespace payload
         static void Main(string[] args)
         {
            
-          find.findItem(args[0]);
+          find.findItem("php.ini");
 
         }
     }

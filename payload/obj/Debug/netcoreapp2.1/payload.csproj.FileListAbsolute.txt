@@ -9,3 +9,14 @@
 /home/abdi/Documents/Project/linProject/payload/obj/Debug/netcoreapp2.1/payload.AssemblyInfo.cs
 /home/abdi/Documents/Project/linProject/payload/obj/Debug/netcoreapp2.1/payload.dll
 /home/abdi/Documents/Project/linProject/payload/obj/Debug/netcoreapp2.1/payload.pdb
+/home/abdi/Documents/Project/linuxProject/payload/bin/Debug/netcoreapp2.1/payload.deps.json
+/home/abdi/Documents/Project/linuxProject/payload/bin/Debug/netcoreapp2.1/payload.runtimeconfig.json
+/home/abdi/Documents/Project/linuxProject/payload/bin/Debug/netcoreapp2.1/payload.runtimeconfig.dev.json
+/home/abdi/Documents/Project/linuxProject/payload/bin/Debug/netcoreapp2.1/payload.dll
+/home/abdi/Documents/Project/linuxProject/payload/bin/Debug/netcoreapp2.1/payload.pdb
+/home/abdi/Documents/Project/linuxProject/payload/obj/Debug/netcoreapp2.1/payload.csprojAssemblyReference.cache
+/home/abdi/Documents/Project/linuxProject/payload/obj/Debug/netcoreapp2.1/payload.csproj.CoreCompileInputs.cache
+/home/abdi/Documents/Project/linuxProject/payload/obj/Debug/netcoreapp2.1/payload.AssemblyInfoInputs.cache
+/home/abdi/Documents/Project/linuxProject/payload/obj/Debug/netcoreapp2.1/payload.AssemblyInfo.cs
+/home/abdi/Documents/Project/linuxProject/payload/obj/Debug/netcoreapp2.1/payload.dll
+/home/abdi/Documents/Project/linuxProject/payload/obj/Debug/netcoreapp2.1/payload.pdb

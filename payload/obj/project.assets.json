@@ -725,11 +725,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/abdi/Documents/Project/linProject/payload/payload.csproj",
+      "projectUniqueName": "/home/abdi/Documents/Project/linuxProject/payload/payload.csproj",
       "projectName": "payload",
-      "projectPath": "/home/abdi/Documents/Project/linProject/payload/payload.csproj",
+      "projectPath": "/home/abdi/Documents/Project/linuxProject/payload/payload.csproj",
       "packagesPath": "/home/abdi/.nuget/packages/",
-      "outputPath": "/home/abdi/Documents/Project/linProject/payload/obj/",
+      "outputPath": "/home/abdi/Documents/Project/linuxProject/payload/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
