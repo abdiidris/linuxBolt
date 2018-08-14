@@ -1,0 +1,5 @@
+-- Tue 14 Aug 02:36:12 BST 2018 --
+id: 1
+tags: findItem, update, speedIncrease, master
+payload: I tested a previous function I created for findItem against the latest function and the older function was faster so I replaced the current function. Also, the older function was less complex, required no installation and does not require data files such as sharedData/find (which I also removed)
+

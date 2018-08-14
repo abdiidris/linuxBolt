@@ -1,0 +1,11 @@
+/home/abdi/Documents/Project/linuxDash/linuxDash/bin/Debug/netcoreapp2.1/linuxDash.deps.json
+/home/abdi/Documents/Project/linuxDash/linuxDash/bin/Debug/netcoreapp2.1/linuxDash.runtimeconfig.json
+/home/abdi/Documents/Project/linuxDash/linuxDash/bin/Debug/netcoreapp2.1/linuxDash.runtimeconfig.dev.json
+/home/abdi/Documents/Project/linuxDash/linuxDash/bin/Debug/netcoreapp2.1/linuxDash.dll
+/home/abdi/Documents/Project/linuxDash/linuxDash/bin/Debug/netcoreapp2.1/linuxDash.pdb
+/home/abdi/Documents/Project/linuxDash/linuxDash/obj/Debug/netcoreapp2.1/linuxDash.csprojAssemblyReference.cache
+/home/abdi/Documents/Project/linuxDash/linuxDash/obj/Debug/netcoreapp2.1/linuxDash.csproj.CoreCompileInputs.cache
+/home/abdi/Documents/Project/linuxDash/linuxDash/obj/Debug/netcoreapp2.1/linuxDash.AssemblyInfoInputs.cache
+/home/abdi/Documents/Project/linuxDash/linuxDash/obj/Debug/netcoreapp2.1/linuxDash.AssemblyInfo.cs
+/home/abdi/Documents/Project/linuxDash/linuxDash/obj/Debug/netcoreapp2.1/linuxDash.dll
+/home/abdi/Documents/Project/linuxDash/linuxDash/obj/Debug/netcoreapp2.1/linuxDash.pdb

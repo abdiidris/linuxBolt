@@ -6,7 +6,7 @@ namespace linuxDash
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            findModule.find.findItem(args[0]);
         }
     }
 }
